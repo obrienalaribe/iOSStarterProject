@@ -1,0 +1,6 @@
+framework module Pods_ChurchFinderTests {
+  umbrella header "Pods-ChurchFinderTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

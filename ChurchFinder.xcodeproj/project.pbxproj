@@ -7,14 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		047DBE231E20481500F28B5A /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047DBE221E20481500F28B5A /* LoginController.swift */; };
+		04BAE1621E206FB900B0AD06 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04BAE1611E206FB900B0AD06 /* GoogleService-Info.plist */; };
+		04BAE1651E21A74700B0AD06 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BAE1641E21A74700B0AD06 /* HomeController.swift */; };
+		04BAE1681E2C315900B0AD06 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BAE1671E2C315900B0AD06 /* LoginView.swift */; };
+		04BAE16B1E2C327700B0AD06 /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BAE16A1E2C327700B0AD06 /* AuthController.swift */; };
+		04BAE16D1E2C328D00B0AD06 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BAE16C1E2C328D00B0AD06 /* AuthView.swift */; };
+		04BAE16F1E2C371E00B0AD06 /* AuthInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BAE16E1E2C371E00B0AD06 /* AuthInteractor.swift */; };
+		04BAE1721E2C39D800B0AD06 /* AuthDelegateInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BAE1711E2C39D800B0AD06 /* AuthDelegateInterface.swift */; };
+		04BAE1741E2C3A5E00B0AD06 /* AuthInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BAE1731E2C3A5E00B0AD06 /* AuthInterface.swift */; };
+		04BAE1761E2C3E8C00B0AD06 /* AuthPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BAE1751E2C3E8C00B0AD06 /* AuthPresenter.swift */; };
+		04BAE17B1E2C551200B0AD06 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BAE17A1E2C551200B0AD06 /* User.swift */; };
+		04BAE17D1E2C5F8A00B0AD06 /* AuthDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BAE17C1E2C5F8A00B0AD06 /* AuthDataManager.swift */; };
+		04BAE1921E2EC9A600B0AD06 /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BAE1911E2EC9A600B0AD06 /* Properties.swift */; };
+		04BAE1941E2ECFA500B0AD06 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BAE1931E2ECFA500B0AD06 /* Strings.swift */; };
 		04FB53491E2038D500D9F2C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB53481E2038D500D9F2C9 /* AppDelegate.swift */; };
-		04FB534B1E2038D500D9F2C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB534A1E2038D500D9F2C9 /* ViewController.swift */; };
-		04FB534E1E2038D500D9F2C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04FB534C1E2038D500D9F2C9 /* Main.storyboard */; };
+		04FB534B1E2038D500D9F2C9 /* ChurchFinderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB534A1E2038D500D9F2C9 /* ChurchFinderController.swift */; };
 		04FB53511E2038D500D9F2C9 /* ChurchFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04FB534F1E2038D500D9F2C9 /* ChurchFinder.xcdatamodeld */; };
 		04FB53531E2038D500D9F2C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FB53521E2038D500D9F2C9 /* Assets.xcassets */; };
 		04FB53561E2038D500D9F2C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04FB53541E2038D500D9F2C9 /* LaunchScreen.storyboard */; };
 		04FB53611E2038D500D9F2C9 /* ChurchFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB53601E2038D500D9F2C9 /* ChurchFinderTests.swift */; };
 		04FB536C1E2038D500D9F2C9 /* ChurchFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB536B1E2038D500D9F2C9 /* ChurchFinderUITests.swift */; };
+		04FB537A1E203AAB00D9F2C9 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB53791E203AAB00D9F2C9 /* ViewExtensions.swift */; };
+		5CAA08654CE33B2E5AD7556D /* Pods_ChurchFinderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D85250C895FD6C21B27764 /* Pods_ChurchFinderUITests.framework */; };
+		78647D4513EFA182E371392C /* Pods_ChurchFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C611FFACDA544C709229319 /* Pods_ChurchFinder.framework */; };
+		9C0BA613FA897A3E96C46A52 /* Pods_ChurchFinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F036CAB7BE892F70A90E7F /* Pods_ChurchFinderTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +52,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		047DBE221E20481500F28B5A /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		04BAE1611E206FB900B0AD06 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		04BAE1641E21A74700B0AD06 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		04BAE1671E2C315900B0AD06 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		04BAE16A1E2C327700B0AD06 /* AuthController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthController.swift; sourceTree = "<group>"; };
+		04BAE16C1E2C328D00B0AD06 /* AuthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		04BAE16E1E2C371E00B0AD06 /* AuthInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthInteractor.swift; sourceTree = "<group>"; };
+		04BAE1711E2C39D800B0AD06 /* AuthDelegateInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthDelegateInterface.swift; sourceTree = "<group>"; };
+		04BAE1731E2C3A5E00B0AD06 /* AuthInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthInterface.swift; sourceTree = "<group>"; };
+		04BAE1751E2C3E8C00B0AD06 /* AuthPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthPresenter.swift; sourceTree = "<group>"; };
+		04BAE17A1E2C551200B0AD06 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		04BAE17C1E2C5F8A00B0AD06 /* AuthDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthDataManager.swift; sourceTree = "<group>"; };
+		04BAE1911E2EC9A600B0AD06 /* Properties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Properties.swift; sourceTree = "<group>"; };
+		04BAE1931E2ECFA500B0AD06 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		04FB53451E2038D500D9F2C9 /* ChurchFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChurchFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04FB53481E2038D500D9F2C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		04FB534A1E2038D500D9F2C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		04FB534D1E2038D500D9F2C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04FB534A1E2038D500D9F2C9 /* ChurchFinderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChurchFinderController.swift; sourceTree = "<group>"; };
 		04FB53501E2038D500D9F2C9 /* ChurchFinder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChurchFinder.xcdatamodel; sourceTree = "<group>"; };
 		04FB53521E2038D500D9F2C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04FB53551E2038D500D9F2C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +79,16 @@
 		04FB53671E2038D500D9F2C9 /* ChurchFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChurchFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04FB536B1E2038D500D9F2C9 /* ChurchFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChurchFinderUITests.swift; sourceTree = "<group>"; };
 		04FB536D1E2038D500D9F2C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04FB53791E203AAB00D9F2C9 /* ViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		0C6DAF8E78E6576F6C4D0763 /* Pods-ChurchFinderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChurchFinderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChurchFinderTests/Pods-ChurchFinderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		18D85250C895FD6C21B27764 /* Pods_ChurchFinderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChurchFinderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19F036CAB7BE892F70A90E7F /* Pods_ChurchFinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChurchFinderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		333A3730961AB7554534B19A /* Pods-ChurchFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChurchFinder.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChurchFinder/Pods-ChurchFinder.release.xcconfig"; sourceTree = "<group>"; };
+		5C688C7CCA7080A7A0A045E2 /* Pods-ChurchFinderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChurchFinderUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChurchFinderUITests/Pods-ChurchFinderUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8C611FFACDA544C709229319 /* Pods_ChurchFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChurchFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5A12E8AB1A5D91F4A4835EE /* Pods-ChurchFinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChurchFinderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChurchFinderTests/Pods-ChurchFinderTests.release.xcconfig"; sourceTree = "<group>"; };
+		CAE0E3F934FB04B05E6893C6 /* Pods-ChurchFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChurchFinder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChurchFinder/Pods-ChurchFinder.debug.xcconfig"; sourceTree = "<group>"; };
+		F7B42302C1ECB56263A8F770 /* Pods-ChurchFinderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChurchFinderUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChurchFinderUITests/Pods-ChurchFinderUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78647D4513EFA182E371392C /* Pods_ChurchFinder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C0BA613FA897A3E96C46A52 /* Pods_ChurchFinderTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +112,87 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CAA08654CE33B2E5AD7556D /* Pods_ChurchFinderUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		047DBE211E2046FC00F28B5A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04BAE1691E2C325500B0AD06 /* Auth */,
+				04BAE1631E21A71200B0AD06 /* Home */,
+				047DBE241E204A1B00F28B5A /* Login */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		047DBE241E204A1B00F28B5A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				047DBE221E20481500F28B5A /* LoginController.swift */,
+				04BAE1671E2C315900B0AD06 /* LoginView.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		04BAE1631E21A71200B0AD06 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				04BAE1641E21A74700B0AD06 /* HomeController.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		04BAE1691E2C325500B0AD06 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				04BAE1791E2C550600B0AD06 /* Model */,
+				04BAE1781E2C523A00B0AD06 /* Business Logic */,
+				04BAE1771E2C51F600B0AD06 /* User Interface */,
+				04BAE1701E2C398700B0AD06 /* Module Interface */,
+			);
+			name = Auth;
+			sourceTree = "<group>";
+		};
+		04BAE1701E2C398700B0AD06 /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				04BAE1711E2C39D800B0AD06 /* AuthDelegateInterface.swift */,
+				04BAE1731E2C3A5E00B0AD06 /* AuthInterface.swift */,
+			);
+			name = "Module Interface";
+			sourceTree = "<group>";
+		};
+		04BAE1771E2C51F600B0AD06 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				04BAE16A1E2C327700B0AD06 /* AuthController.swift */,
+				04BAE1751E2C3E8C00B0AD06 /* AuthPresenter.swift */,
+				04BAE16C1E2C328D00B0AD06 /* AuthView.swift */,
+			);
+			name = "User Interface";
+			sourceTree = "<group>";
+		};
+		04BAE1781E2C523A00B0AD06 /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				04BAE16E1E2C371E00B0AD06 /* AuthInteractor.swift */,
+			);
+			name = "Business Logic";
+			sourceTree = "<group>";
+		};
+		04BAE1791E2C550600B0AD06 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04BAE17A1E2C551200B0AD06 /* User.swift */,
+				04BAE17C1E2C5F8A00B0AD06 /* AuthDataManager.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		04FB533C1E2038D500D9F2C9 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +200,8 @@
 				04FB535F1E2038D500D9F2C9 /* ChurchFinderTests */,
 				04FB536A1E2038D500D9F2C9 /* ChurchFinderUITests */,
 				04FB53461E2038D500D9F2C9 /* Products */,
+				DDDFFE1FB28CE1D7FB63F324 /* Pods */,
+				DCA6B8C5F0110FA85E1C46E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +218,17 @@
 		04FB53471E2038D500D9F2C9 /* ChurchFinder */ = {
 			isa = PBXGroup;
 			children = (
+				047DBE211E2046FC00F28B5A /* Controller */,
 				04FB53481E2038D500D9F2C9 /* AppDelegate.swift */,
-				04FB534A1E2038D500D9F2C9 /* ViewController.swift */,
-				04FB534C1E2038D500D9F2C9 /* Main.storyboard */,
+				04FB534A1E2038D500D9F2C9 /* ChurchFinderController.swift */,
 				04FB53521E2038D500D9F2C9 /* Assets.xcassets */,
 				04FB53541E2038D500D9F2C9 /* LaunchScreen.storyboard */,
 				04FB53571E2038D500D9F2C9 /* Info.plist */,
+				04BAE1611E206FB900B0AD06 /* GoogleService-Info.plist */,
 				04FB534F1E2038D500D9F2C9 /* ChurchFinder.xcdatamodeld */,
+				04FB53791E203AAB00D9F2C9 /* ViewExtensions.swift */,
+				04BAE1911E2EC9A600B0AD06 /* Properties.swift */,
+				04BAE1931E2ECFA500B0AD06 /* Strings.swift */,
 			);
 			path = ChurchFinder;
 			sourceTree = "<group>";
@@ -128,6 +251,29 @@
 			path = ChurchFinderUITests;
 			sourceTree = "<group>";
 		};
+		DCA6B8C5F0110FA85E1C46E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C611FFACDA544C709229319 /* Pods_ChurchFinder.framework */,
+				19F036CAB7BE892F70A90E7F /* Pods_ChurchFinderTests.framework */,
+				18D85250C895FD6C21B27764 /* Pods_ChurchFinderUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DDDFFE1FB28CE1D7FB63F324 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CAE0E3F934FB04B05E6893C6 /* Pods-ChurchFinder.debug.xcconfig */,
+				333A3730961AB7554534B19A /* Pods-ChurchFinder.release.xcconfig */,
+				0C6DAF8E78E6576F6C4D0763 /* Pods-ChurchFinderTests.debug.xcconfig */,
+				B5A12E8AB1A5D91F4A4835EE /* Pods-ChurchFinderTests.release.xcconfig */,
+				5C688C7CCA7080A7A0A045E2 /* Pods-ChurchFinderUITests.debug.xcconfig */,
+				F7B42302C1ECB56263A8F770 /* Pods-ChurchFinderUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +281,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04FB53701E2038D500D9F2C9 /* Build configuration list for PBXNativeTarget "ChurchFinder" */;
 			buildPhases = (
+				BE55584638BA55340651A654 /* [CP] Check Pods Manifest.lock */,
 				04FB53411E2038D500D9F2C9 /* Sources */,
 				04FB53421E2038D500D9F2C9 /* Frameworks */,
 				04FB53431E2038D500D9F2C9 /* Resources */,
+				2C12220B03306162E7FC6CB9 /* [CP] Embed Pods Frameworks */,
+				FE931027FA155A308D162FAD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +301,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04FB53731E2038D500D9F2C9 /* Build configuration list for PBXNativeTarget "ChurchFinderTests" */;
 			buildPhases = (
+				15A52456CF607DC03B525273 /* [CP] Check Pods Manifest.lock */,
 				04FB53581E2038D500D9F2C9 /* Sources */,
 				04FB53591E2038D500D9F2C9 /* Frameworks */,
 				04FB535A1E2038D500D9F2C9 /* Resources */,
+				41578C6B2F03CF7406DD1F4B /* [CP] Embed Pods Frameworks */,
+				86C2873A9ED0F1D1C6F55769 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +322,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04FB53761E2038D500D9F2C9 /* Build configuration list for PBXNativeTarget "ChurchFinderUITests" */;
 			buildPhases = (
+				D0218C99442C52B084D18C0B /* [CP] Check Pods Manifest.lock */,
 				04FB53631E2038D500D9F2C9 /* Sources */,
 				04FB53641E2038D500D9F2C9 /* Frameworks */,
 				04FB53651E2038D500D9F2C9 /* Resources */,
+				D942F919B69F7489DA583F2D /* [CP] Embed Pods Frameworks */,
+				D9079292F4F505C4723ED97D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -240,7 +395,7 @@
 			files = (
 				04FB53561E2038D500D9F2C9 /* LaunchScreen.storyboard in Resources */,
 				04FB53531E2038D500D9F2C9 /* Assets.xcassets in Resources */,
-				04FB534E1E2038D500D9F2C9 /* Main.storyboard in Resources */,
+				04BAE1621E206FB900B0AD06 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,14 +415,166 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		15A52456CF607DC03B525273 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2C12220B03306162E7FC6CB9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChurchFinder/Pods-ChurchFinder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41578C6B2F03CF7406DD1F4B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChurchFinderTests/Pods-ChurchFinderTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86C2873A9ED0F1D1C6F55769 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChurchFinderTests/Pods-ChurchFinderTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE55584638BA55340651A654 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D0218C99442C52B084D18C0B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D9079292F4F505C4723ED97D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChurchFinderUITests/Pods-ChurchFinderUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D942F919B69F7489DA583F2D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChurchFinderUITests/Pods-ChurchFinderUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE931027FA155A308D162FAD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChurchFinder/Pods-ChurchFinder-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04FB53411E2038D500D9F2C9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04FB534B1E2038D500D9F2C9 /* ViewController.swift in Sources */,
+				04BAE16D1E2C328D00B0AD06 /* AuthView.swift in Sources */,
+				04BAE1741E2C3A5E00B0AD06 /* AuthInterface.swift in Sources */,
+				04BAE1721E2C39D800B0AD06 /* AuthDelegateInterface.swift in Sources */,
+				04BAE16F1E2C371E00B0AD06 /* AuthInteractor.swift in Sources */,
+				04BAE17D1E2C5F8A00B0AD06 /* AuthDataManager.swift in Sources */,
+				04FB534B1E2038D500D9F2C9 /* ChurchFinderController.swift in Sources */,
+				04BAE1681E2C315900B0AD06 /* LoginView.swift in Sources */,
+				04BAE17B1E2C551200B0AD06 /* User.swift in Sources */,
+				04BAE1921E2EC9A600B0AD06 /* Properties.swift in Sources */,
 				04FB53511E2038D500D9F2C9 /* ChurchFinder.xcdatamodeld in Sources */,
+				04BAE1651E21A74700B0AD06 /* HomeController.swift in Sources */,
+				04BAE16B1E2C327700B0AD06 /* AuthController.swift in Sources */,
+				04BAE1941E2ECFA500B0AD06 /* Strings.swift in Sources */,
+				04FB537A1E203AAB00D9F2C9 /* ViewExtensions.swift in Sources */,
 				04FB53491E2038D500D9F2C9 /* AppDelegate.swift in Sources */,
+				047DBE231E20481500F28B5A /* LoginController.swift in Sources */,
+				04BAE1761E2C3E8C00B0AD06 /* AuthPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,14 +610,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		04FB534C1E2038D500D9F2C9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				04FB534D1E2038D500D9F2C9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		04FB53541E2038D500D9F2C9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -415,11 +714,39 @@
 		};
 		04FB53711E2038D500D9F2C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAE0E3F934FB04B05E6893C6 /* Pods-ChurchFinder.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7289W83XQQ;
 				INFOPLIST_FILE = ChurchFinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AddressBook\"",
+					"-framework",
+					"\"FirebaseAnalytics\"",
+					"-framework",
+					"\"FirebaseCore\"",
+					"-framework",
+					"\"FirebaseInstanceID\"",
+					"-framework",
+					"\"GoogleInterchangeUtilities\"",
+					"-framework",
+					"\"GoogleSymbolUtilities\"",
+					"-framework",
+					"\"GoogleToolboxForMac\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"$(inherited)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = obrien.alaribe.ChurchFinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -428,11 +755,39 @@
 		};
 		04FB53721E2038D500D9F2C9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 333A3730961AB7554534B19A /* Pods-ChurchFinder.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7289W83XQQ;
 				INFOPLIST_FILE = ChurchFinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AddressBook\"",
+					"-framework",
+					"\"FirebaseAnalytics\"",
+					"-framework",
+					"\"FirebaseCore\"",
+					"-framework",
+					"\"FirebaseInstanceID\"",
+					"-framework",
+					"\"GoogleInterchangeUtilities\"",
+					"-framework",
+					"\"GoogleSymbolUtilities\"",
+					"-framework",
+					"\"GoogleToolboxForMac\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"$(inherited)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = obrien.alaribe.ChurchFinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -441,6 +796,7 @@
 		};
 		04FB53741E2038D500D9F2C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C6DAF8E78E6576F6C4D0763 /* Pods-ChurchFinderTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -456,6 +812,7 @@
 		};
 		04FB53751E2038D500D9F2C9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5A12E8AB1A5D91F4A4835EE /* Pods-ChurchFinderTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +828,7 @@
 		};
 		04FB53771E2038D500D9F2C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C688C7CCA7080A7A0A045E2 /* Pods-ChurchFinderUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 7289W83XQQ;
@@ -485,6 +843,7 @@
 		};
 		04FB53781E2038D500D9F2C9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7B42302C1ECB56263A8F770 /* Pods-ChurchFinderUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 7289W83XQQ;
@@ -516,6 +875,7 @@
 				04FB53721E2038D500D9F2C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04FB53731E2038D500D9F2C9 /* Build configuration list for PBXNativeTarget "ChurchFinderTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +884,7 @@
 				04FB53751E2038D500D9F2C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04FB53761E2038D500D9F2C9 /* Build configuration list for PBXNativeTarget "ChurchFinderUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +893,7 @@
 				04FB53781E2038D500D9F2C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
