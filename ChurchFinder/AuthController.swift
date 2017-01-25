@@ -23,7 +23,6 @@ class AuthController: UIViewController {
         
         mainView.loginRegisterBtn.addTarget(self, action: #selector(AuthController.registerUserAction), for: .touchUpInside)
         
-        
     }
     
     func addViewListeners(){
@@ -35,23 +34,22 @@ class AuthController: UIViewController {
     
     
     func toggleAuth(){
+        //TODO: Send this to presenter
         let title = mainView.loginRegisterSegmentControl.titleForSegment(at: mainView.loginRegisterSegmentControl.selectedSegmentIndex)
         mainView.loginRegisterBtn.setTitle(title, for: .normal)
         
-        //change height of input container view
-        mainView.inputsContainerHeightAnchor?.constant = mainView.loginRegisterSegmentControl.selectedSegmentIndex == 0 ? 100 : 150
+        if mainView.loginRegisterSegmentControl.selectedSegmentIndex == 0 {
+            mainView.registerContainerView.removeFromSuperview()
+            mainView.setupLoginForm()
+            //User will login
+        }else{
+            //User will register
+            mainView.loginContainerView.removeFromSuperview()
+            mainView.setupRegisterForm()
+        }
         
         
-        //change height of name field
-        mainView.nameTextFieldHeightAnchor?.isActive = false
-       
         
-       mainView.nameTextFieldHeightAnchor = mainView.nameTextField.heightAnchor.constraint(equalTo: mainView.inputsContainerView.heightAnchor, multiplier: mainView.loginRegisterSegmentControl.selectedSegmentIndex == 0 ? 0 : 1/3)
-     
-        mainView.nameTextFieldHeightAnchor?.isActive = true
-
-        print(mainView.nameTextFieldHeightAnchor)
-      
     }
     
     func registerUserAction(){
@@ -67,4 +65,5 @@ class AuthController: UIViewController {
     }
     
 }
+
 
