@@ -8,11 +8,23 @@
 
 import Foundation
 
+
 class AuthDataManager : AuthInterface {
-    
-    func registerUserAction(user: User) {
-        //make Firebase calls here and then call delegate method here
+  
+    func register(user: User, completionHandler: @escaping CompletionHandler) {
+         let flag = true
+        completionHandler(flag)
+
+       
     }
+
+    func login(user: User, completionHandler: @escaping CompletionHandler) {
+
+
+    }
+
+
+
     
     
 }

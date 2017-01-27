@@ -8,6 +8,9 @@
 
 import Foundation
 
+typealias CompletionHandler = (_ success:Bool) -> Void
+
 protocol AuthInterface {
-    func registerUserAction(user: User)
+    func register(user: User, completionHandler: @escaping CompletionHandler)
+    func login(user: User, completionHandler: @escaping CompletionHandler)
 }

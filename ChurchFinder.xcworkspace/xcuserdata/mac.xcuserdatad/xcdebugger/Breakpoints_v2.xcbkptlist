@@ -121,28 +121,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ChurchFinder/AuthController.swift"
-            timestampString = "506394326.752059"
+            timestampString = "507083810.958132"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
-            landmarkName = "registerUserAction()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ChurchFinder/AuthController.swift"
-            timestampString = "506394326.752059"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "registerUserAction()"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "loginRegisterAction()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -153,11 +137,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ChurchFinderTests/ChurchFinderTests.swift"
-            timestampString = "506224481.857138"
+            timestampString = "507074314.70724"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "11"
-            endingLineNumber = "11">
+            startingLineNumber = "12"
+            endingLineNumber = "12">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -166,13 +150,29 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ChurchFinder/AuthController.swift"
-            timestampString = "506386517.779338"
+            filePath = "ChurchFinderTests/ChurchFinderTests.swift"
+            timestampString = "507074998.128172"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "toggleAuth()"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "ChurchFinderTests"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChurchFinder/AuthRequestValidator.swift"
+            timestampString = "507077051.687054"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "isRegistrationDetailsValid(user:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -182,14 +182,62 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ChurchFinder/AuthController.swift"
-            timestampString = "506393919.698045"
+            filePath = "ChurchFinderTests/AuthValidatorTest.swift"
+            timestampString = "507076658.789055"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "toggleAuth()"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "AuthValidatorTest"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChurchFinder/AuthInteractor.swift"
+            timestampString = "507082818.964409"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "register(user:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ChurchFinder.AuthInteractor.register (user : ChurchFinder.User) -&gt; ()"
+                  moduleName = "ChurchFinder"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/MobileApps/ChurchFinder/ChurchFinder/AuthInteractor.swift"
+                  timestampString = "507082819.278461"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "724">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ChurchFinder.AuthInteractor.(register (user : ChurchFinder.User) -&gt; ()).(closure #1)"
+                  moduleName = "ChurchFinder"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/MobileApps/ChurchFinder/ChurchFinder/AuthInteractor.swift"
+                  timestampString = "507082819.280325"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -6,15 +6,17 @@ target 'ChurchFinder' do
   use_frameworks!
 
 
-  pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'Firebase/Storage'
   pod 'Firebase/Database'
+  pod 'SVProgressHUD'
 
 
   target 'ChurchFinderTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'Firebase/Core'
+
   end
 
   target 'ChurchFinderUITests' do

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		047DBE231E20481500F28B5A /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047DBE221E20481500F28B5A /* LoginController.swift */; };
+		04B2DB6E1E3951F9009EF299 /* AuthRequestValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B2DB6D1E3951F9009EF299 /* AuthRequestValidator.swift */; };
+		04B2DB701E3953D1009EF299 /* AuthValidatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B2DB6F1E3953D1009EF299 /* AuthValidatorTest.swift */; };
 		04BAE1621E206FB900B0AD06 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04BAE1611E206FB900B0AD06 /* GoogleService-Info.plist */; };
 		04BAE1651E21A74700B0AD06 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BAE1641E21A74700B0AD06 /* HomeController.swift */; };
 		04BAE1681E2C315900B0AD06 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BAE1671E2C315900B0AD06 /* LoginView.swift */; };
@@ -53,6 +55,8 @@
 
 /* Begin PBXFileReference section */
 		047DBE221E20481500F28B5A /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		04B2DB6D1E3951F9009EF299 /* AuthRequestValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthRequestValidator.swift; sourceTree = "<group>"; };
+		04B2DB6F1E3953D1009EF299 /* AuthValidatorTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthValidatorTest.swift; sourceTree = "<group>"; };
 		04BAE1611E206FB900B0AD06 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		04BAE1641E21A74700B0AD06 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		04BAE1671E2C315900B0AD06 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -180,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				04BAE16E1E2C371E00B0AD06 /* AuthInteractor.swift */,
+				04B2DB6D1E3951F9009EF299 /* AuthRequestValidator.swift */,
 			);
 			name = "Business Logic";
 			sourceTree = "<group>";
@@ -238,6 +243,7 @@
 			children = (
 				04FB53601E2038D500D9F2C9 /* ChurchFinderTests.swift */,
 				04FB53621E2038D500D9F2C9 /* Info.plist */,
+				04B2DB6F1E3953D1009EF299 /* AuthValidatorTest.swift */,
 			);
 			path = ChurchFinderTests;
 			sourceTree = "<group>";
@@ -560,6 +566,7 @@
 			files = (
 				04BAE16D1E2C328D00B0AD06 /* AuthView.swift in Sources */,
 				04BAE1741E2C3A5E00B0AD06 /* AuthInterface.swift in Sources */,
+				04B2DB6E1E3951F9009EF299 /* AuthRequestValidator.swift in Sources */,
 				04BAE1721E2C39D800B0AD06 /* AuthDelegateInterface.swift in Sources */,
 				04BAE16F1E2C371E00B0AD06 /* AuthInteractor.swift in Sources */,
 				04BAE17D1E2C5F8A00B0AD06 /* AuthDataManager.swift in Sources */,
@@ -582,6 +589,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04B2DB701E3953D1009EF299 /* AuthValidatorTest.swift in Sources */,
 				04FB53611E2038D500D9F2C9 /* ChurchFinderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

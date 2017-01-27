@@ -21,7 +21,7 @@ class AuthController: UIViewController {
        
         mainView.loginRegisterSegmentControl.addTarget(self, action: #selector(AuthController.toggleAuth), for: .valueChanged)
         
-        mainView.loginRegisterBtn.addTarget(self, action: #selector(AuthController.registerUserAction), for: .touchUpInside)
+        mainView.loginRegisterBtn.addTarget(self, action: #selector(AuthController.loginRegisterAction), for: .touchUpInside)
         
     }
     
@@ -31,33 +31,17 @@ class AuthController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(self.raiseFormFields(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(self.dropFormFields(notification:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
+ 
     
-    
-    func toggleAuth(){
-        //TODO: Send this to presenter
-        let title = mainView.loginRegisterSegmentControl.titleForSegment(at: mainView.loginRegisterSegmentControl.selectedSegmentIndex)
-        mainView.loginRegisterBtn.setTitle(title, for: .normal)
-        
+    func loginRegisterAction(){
+         let userDetails = User(name: mainView.nameTextField.text, email: mainView.emailTextField.text, password: mainView.passwordTextField.text)
+
         if mainView.loginRegisterSegmentControl.selectedSegmentIndex == 0 {
-            mainView.registerContainerView.removeFromSuperview()
-            mainView.setupLoginForm()
-            //User will login
+            eventHandler.login(user: userDetails)
         }else{
-            //User will register
-            mainView.loginContainerView.removeFromSuperview()
-            mainView.setupRegisterForm()
+            eventHandler.register(user: userDetails)
         }
         
-        
-        
-    }
-    
-    func registerUserAction(){
-        if let name = mainView.nameTextField.text, let email = mainView.emailTextField.text, let password = mainView.passwordTextField.text {
-            let registeringUser = User(name: name, email: email, password: password)
-            eventHandler.registerUserAction(user: registeringUser)
-            return
-        }       
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {

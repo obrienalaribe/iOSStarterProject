@@ -8,24 +8,26 @@
 
 import Foundation
 
-//Testable business logic
-class AuthInteractor : AuthInterface {
+class AuthInteractor {
     var delegate: AuthDelegateInterface!
     var dao: AuthInterface
+    var requestValidator = AuthRequestValidator()
     
     init(dao: AuthInterface) {
         self.dao = dao
     }
     
-    func registerUserAction(user: User){
-        //Validate user records with a class here
-        if true {
-           
-            delegate.authModuleWillRegisterUser()
-            dao.registerUserAction(user: user)
+    func register(user: User){
 
-            print("Interactor is talking to third party entities")
-            delegate.authModuleDidRegisterUser()
+        if requestValidator.isRegistrationDetailsValid(user: user) {
+            delegate.authModuleWillRegisterUser()
+
+           dao.register(user: user, completionHandler: { (status) in
+                print("Interactor is talking to third party entities")
+                self.delegate.authModuleDidRegisterUser()
+
+           })
+           
             return
         }
         
@@ -34,7 +36,8 @@ class AuthInteractor : AuthInterface {
         
     }
     
-    func extra(){
+    func login(user: User){
         
     }
+
 }
