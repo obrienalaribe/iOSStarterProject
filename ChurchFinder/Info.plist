@@ -32,5 +32,9 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Find churches around you</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Let the driver know where you are</string>
 </dict>
 </plist>

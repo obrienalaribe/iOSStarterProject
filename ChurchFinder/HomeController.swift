@@ -66,6 +66,8 @@ class HomeController: UIPageViewController, UIPageViewControllerDataSource {
         pageControl.pageIndicatorTintColor = Asset.Styles.primary.color
         pageControl.currentPageIndicatorTintColor = Asset.Styles.secondary.color
         pageControl.backgroundColor = Asset.Styles.primaryDark.color
+        
+        pageControl.topAnchor.constraint(equalTo: homeContentController.contentLabel.bottomAnchor).isActive = true
     }
     
     

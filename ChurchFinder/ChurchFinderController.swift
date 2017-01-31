@@ -1,84 +1,29 @@
 //
-//  ViewController.swift
+//  ChurchController.swift
 //  ChurchFinder
 //
-//  Created by mac on 1/6/17.
+//  Created by Obrien Alaribe on 31/01/2017.
 //  Copyright © 2017 mac. All rights reserved.
 //
 
 import UIKit
 
-class ChurchFinderController: UITableViewController {
+class ChurchFinderController: UIViewController {
 
+    var mainView : ChurchFinderView!
+    var interactor = ChurchInteractor(dao: ChurchDataManager())
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Nearby Churches"
-        self.tableView.separatorStyle = .singleLine
+        mainView = ChurchFinderView(parent: self.view)
+        interactor.delegate = self
         
-        view.backgroundColor = UIColor(white: 0.95, alpha: 1)
-        tableView.backgroundColor = UIColor(white: 0.95, alpha: 1)
-        
-        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
-        
-        //remove extra cells in footer
-        let footer = UIView(frame: CGRect(x: 0, y: 0, width: self.tableView.frame.size.width, height: 1))
-        self.tableView.tableFooterView = footer
-        
-        //remove sticky header
-        let dummyViewHeight : CGFloat = 40;
-        let dummyView = UIView(frame:CGRect(x: 0, y: 0, width: self.tableView.bounds.size.width, height: dummyViewHeight))
-        self.tableView.tableHeaderView = dummyView;
-        self.tableView.contentInset = UIEdgeInsetsMake(-dummyViewHeight, 0, 0, 0);
-        
-        
+        self.view.addSubview(mainView)
 
+        mainView.findBtn.addTarget(self, action: #selector(ChurchFinderController.findBtnAction), for: .touchUpInside)
     }
 
-    override func viewWillAppear(_ animated: Bool) {
-        
+    func findBtnAction(){
+        interactor.fetchNearbyChurches()
     }
-    
-    override  // return the number of cells each section.
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5;
-    }
-
-    
-    // return cells
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        
-        if (indexPath as NSIndexPath).section == 0 {
-            cell.textLabel?.text = "Everlasting Fathers Assembly Leeds"
-            
-            cell.imageView?.layer.cornerRadius = 40
-            cell.imageView?.layer.masksToBounds = true
-            cell.imageView?.backgroundColor = UIColor(white: 0.95, alpha: 1)
-            
-        } else if (indexPath as NSIndexPath).section == 1 {
-            cell.textLabel?.text = "Power Connections Leeds"
-            
-            cell.imageView?.layer.cornerRadius = 40
-            cell.imageView?.layer.masksToBounds = true
-            cell.imageView?.backgroundColor = UIColor(white: 0.95, alpha: 1)
-        }
-        
-        cell.accessoryType = UITableViewCellAccessoryType.disclosureIndicator
-        
-        return cell
-
-    }
-    
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 60;
-    }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.row)
-    }
-    
-
-
 }
-

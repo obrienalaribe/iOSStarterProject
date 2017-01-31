@@ -27,6 +27,16 @@ enum StringResource {
         }
     }
     
+    enum Church {
+        case findBtn
+        
+        var text: String{
+            switch self {
+            case .findBtn: return "Find Churches"
+            }
+        }
+    }
+    
     
 }
 
