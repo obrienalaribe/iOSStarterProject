@@ -24,6 +24,7 @@ class ChurchInteractor {
                 if result != nil {
                     
                     self.delegate.churchModuleDidFindChurches(churches: result)
+                    
                 }
             })
         }

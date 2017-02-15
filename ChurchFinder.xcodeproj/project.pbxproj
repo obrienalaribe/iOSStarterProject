@@ -31,6 +31,8 @@
 		04FB53611E2038D500D9F2C9 /* ChurchFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB53601E2038D500D9F2C9 /* ChurchFinderTests.swift */; };
 		04FB536C1E2038D500D9F2C9 /* ChurchFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB536B1E2038D500D9F2C9 /* ChurchFinderUITests.swift */; };
 		04FB537A1E203AAB00D9F2C9 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB53791E203AAB00D9F2C9 /* ViewExtensions.swift */; };
+		43017DD41E54B6AA00B34036 /* ChurchProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43017DD31E54B6AA00B34036 /* ChurchProfileController.swift */; };
+		43017DD61E54C07600B34036 /* ChurchProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43017DD51E54C07600B34036 /* ChurchProfile.swift */; };
 		4354C7531E40EC0200F2A235 /* ChurchFinderRouterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4354C7521E40EC0200F2A235 /* ChurchFinderRouterInterface.swift */; };
 		4354C7551E40EE3C00F2A235 /* ChurchFinderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4354C7541E40EE3C00F2A235 /* ChurchFinderRouter.swift */; };
 		4354C7571E40F53200F2A235 /* DataFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4354C7561E40F53200F2A235 /* DataFactory.swift */; };
@@ -100,6 +102,8 @@
 		18D85250C895FD6C21B27764 /* Pods_ChurchFinderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChurchFinderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		19F036CAB7BE892F70A90E7F /* Pods_ChurchFinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChurchFinderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		333A3730961AB7554534B19A /* Pods-ChurchFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChurchFinder.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChurchFinder/Pods-ChurchFinder.release.xcconfig"; sourceTree = "<group>"; };
+		43017DD31E54B6AA00B34036 /* ChurchProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChurchProfileController.swift; sourceTree = "<group>"; };
+		43017DD51E54C07600B34036 /* ChurchProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChurchProfile.swift; sourceTree = "<group>"; };
 		4354C7521E40EC0200F2A235 /* ChurchFinderRouterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChurchFinderRouterInterface.swift; sourceTree = "<group>"; };
 		4354C7541E40EE3C00F2A235 /* ChurchFinderRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChurchFinderRouter.swift; sourceTree = "<group>"; };
 		4354C7561E40F53200F2A235 /* DataFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataFactory.swift; sourceTree = "<group>"; };
@@ -283,6 +287,15 @@
 			path = ChurchFinderUITests;
 			sourceTree = "<group>";
 		};
+		43017DD21E54B68700B34036 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				43017DD31E54B6AA00B34036 /* ChurchProfileController.swift */,
+				43017DD51E54C07600B34036 /* ChurchProfile.swift */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
 		43A739291E40C9E1001123D6 /* Business Logic */ = {
 			isa = PBXGroup;
 			children = (
@@ -322,6 +335,7 @@
 		43D2DB021E40C08700E5ADCB /* Church */ = {
 			isa = PBXGroup;
 			children = (
+				43017DD21E54B68700B34036 /* Profile */,
 				43A739311E40DF18001123D6 /* Result */,
 				43A739301E40DEF5001123D6 /* Finder */,
 			);
@@ -662,6 +676,7 @@
 				43A739381E40E4FB001123D6 /* Church.swift in Sources */,
 				43A7392F1E40DB30001123D6 /* ChurchFinderDelegateInterface.swift in Sources */,
 				04BAE1741E2C3A5E00B0AD06 /* AuthInterface.swift in Sources */,
+				43017DD41E54B6AA00B34036 /* ChurchProfileController.swift in Sources */,
 				04B2DB6E1E3951F9009EF299 /* AuthRequestValidator.swift in Sources */,
 				04BAE1721E2C39D800B0AD06 /* AuthDelegateInterface.swift in Sources */,
 				04BAE16F1E2C371E00B0AD06 /* AuthInteractor.swift in Sources */,
@@ -683,6 +698,7 @@
 				43D2DB041E40C0BE00E5ADCB /* ChurchFinderController.swift in Sources */,
 				43A7392B1E40CA01001123D6 /* ChurchInteractor.swift in Sources */,
 				4354C7571E40F53200F2A235 /* DataFactory.swift in Sources */,
+				43017DD61E54C07600B34036 /* ChurchProfile.swift in Sources */,
 				04BAE1761E2C3E8C00B0AD06 /* AuthPresenter.swift in Sources */,
 				43A739331E40DF56001123D6 /* ChurchFinderPresenter.swift in Sources */,
 				43D2DB071E40C0F300E5ADCB /* ChurchFinderView.swift in Sources */,
