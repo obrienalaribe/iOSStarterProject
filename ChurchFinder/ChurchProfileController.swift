@@ -19,10 +19,10 @@ class ChurchProfileController: UIViewController {
         
         view.addSubview(mainView)
         
+    }
     
-        
-        
-        
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
 
 }

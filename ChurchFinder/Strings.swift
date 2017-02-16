@@ -29,10 +29,12 @@ enum StringResource {
     
     enum Church {
         case findBtn
+        case requestPickupBtn
         
         var text: String{
             switch self {
             case .findBtn: return "Find Churches"
+            case .requestPickupBtn: return "Request Pickup"
             }
         }
     }
